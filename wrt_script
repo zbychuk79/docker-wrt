@@ -4,7 +4,7 @@ apt update
 apt upgrade -y
 apt install -y mc gawk python aptitude links wget curl build-essential genisoimage \
  libncurses5-dev zlib1g-dev isolinux git gettext libssl-dev xsltproc liblzma-dev \
- dnsutils git
+ dnsutils
 
 serwer="https://zbychuk79.github.io"
 
