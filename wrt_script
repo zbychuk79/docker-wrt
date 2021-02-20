@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cat >> /etc/apt/apt.conf << EOF
-Acquire::http::Proxy "http://omv1:3142";
+#Acquire::http::Proxy "http://omv1:3142";
 EOF
 
 apt update
