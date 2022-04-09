@@ -8,12 +8,18 @@ apt update
 apt upgrade -y
 apt install -y mc gawk python aptitude links wget curl build-essential genisoimage \
  libncurses5-dev zlib1g-dev isolinux git gettext libssl-dev xsltproc liblzma-dev \
- dnsutils python3
+ dnsutils python3 rsync \
+ ccache ecj fastjar file g++ \
+ java-propose-classpath libelf-dev \
+ libncursesw5-dev python python2.7-dev python3 unzip \
+ python3-distutils python3-setuptools python3-dev subversion \
+ swig time xsltproc zlib1g-dev
 apt clean
 
 server="https://raw.githubusercontent.com/zbychuk79"
 cd /usr/local/bin
 wget $server/wrt-config/master/wrt
+wget $server/wrt-config/master/wrt-rpi+
 wget $server/ipxe-custom/master/ipxe
 chmod +x *
 
